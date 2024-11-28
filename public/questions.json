@@ -1,0 +1,34 @@
+[
+    {
+      "question": "How do you approach problem-solving?",
+      "url": "https://picsum.photos/400/400?random=1",
+      "options": [
+        { "label": "A. Analytical", "weight": 3 },
+        { "label": "B. Creative", "weight": 2 },
+        { "label": "C. Pragmatic", "weight": 1 },
+        { "label": "D. Collaborative", "weight": 4 }
+      ]
+      
+    },
+    {
+        "question": "2-How do you approach problem-solving?",
+        "url": "https://picsum.photos/400/400?random=2",
+        "options": [
+          { "label": "A. Analytical", "weight": 3 },
+          { "label": "B. Creative", "weight": 2 },
+          { "label": "C. Pragmatic", "weight": 1 },
+          { "label": "D. Collaborative", "weight": 4 }
+        ]
+      },
+    {
+      "question": "How do you prefer to work?",
+      "url": "https://picsum.photos/400/400?random=3",
+      "options": [
+        { "label": "A. Independently", "weight": 3 },
+        { "label": "B. As part of a team", "weight": 4 },
+        { "label": "C. With clear instructions", "weight": 2 },
+        { "label": "D. With flexibility", "weight": 1 }
+      ]
+    }
+]
+  
