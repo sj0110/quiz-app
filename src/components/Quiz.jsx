@@ -98,7 +98,10 @@ const Quiz = () => {
               {currentQuestion.options.map((option, index) => (
                 <button
                   key={index}
-                  className={`w-full ${selectedAnswers[currentQuestionIndex] === option.label ? 'bg-[#0064ff]' : 'bg-gray-800'} hover:border-[#0064ff] border-[1px] border-gray-800 text-white font-medium py-3 px-6 rounded-xl text-left transition-all duration-300 ease-in-out`}
+                  className={`w-full ${selectedAnswers[currentQuestionIndex] === option.label
+                      ? 'bg-[#0064ff] text-white' // Selection color
+                      : 'bg-gray-800 hover:bg-[#576d8f]' // Hover color
+                    } border-[1px] border-gray-800 font-medium py-3 px-6 rounded-xl text-left transition-all duration-300 ease-in-out`}
                   onClick={() => handleAnswerSelect(option, currentQuestionIndex)}
                 >
                   {option.label}
