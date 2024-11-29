@@ -36,7 +36,8 @@ const Form = () => {
 
     try {
       // console.log("Web App URL:", import.meta.env.VITE_WEB_APP_URL);
-      const response = await fetch(import.meta.env.VITE_WEB_APP_URL, {  // Replace with your web app URL
+      // const response = await fetch(import.meta.env.VITE_WEB_APP_URL, {  // Replace with your web app URL
+      const response = await fetch('https://script.google.com/macros/s/AKfycbz4fGguqjWhy3OoTofXXCuxxSbC4MkXkOdpf1dcPK1uFXf64uwBDJWUxDht8K4csRwR/exec', {  // Replace with your web app URL
         method: 'POST',
         mode: 'no-cors',
         headers: {
