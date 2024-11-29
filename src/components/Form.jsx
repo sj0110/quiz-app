@@ -35,6 +35,7 @@ const Form = () => {
     setLoading(true); // Set loading to true when submission starts
 
     try {
+      console.log("Web App URL:", import.meta.env.VITE_WEB_APP_URL);
       const response = await fetch(import.meta.env.VITE_WEB_APP_URL, {  // Replace with your web app URL
         method: 'POST',
         mode: 'no-cors',
