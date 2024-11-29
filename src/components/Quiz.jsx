@@ -79,7 +79,7 @@ const Quiz = () => {
   const fillValue = (currentQuestion + 1) / questions.length;
 
   return (
-    <div className="relative mx-8 max-w-5xl rounded-xl border border-gray-800 bg-gray-950 px-6 sm:px-8 md:px-12 py-6 sm:py-8 shadow-md shadow-gray-700 flex flex-col sm:flex-row items-center mb-40">
+    <div className="relative mx-8 max-w-5xl rounded-xl border border-gray-800 bg-gray-950 px-6 sm:px-8 md:px-12 py-6 sm:py-8 shadow-md shadow-gray-700 flex flex-col sm:flex-row items-center mb-20 2xl:mb-40">
       <AnimatePresence>
         {currentQuestion && (
           <motion.div
@@ -91,7 +91,7 @@ const Quiz = () => {
             transition={{ duration: 0.7, ease: 'easeInOut' }} // Improved timing and easing
             className="w-full sm:w-2/3"
           >
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
+            <h2 className="text-lg sm:text-2xl font-semibold text-white mb-8">
               {currentQuestion.question}
             </h2>
             <div className="mt-4 space-y-3">
@@ -101,16 +101,16 @@ const Quiz = () => {
                   className={`w-full ${selectedAnswers[currentQuestionIndex] === option.label
                       ? 'bg-[#0064ff] text-white' // Selection color
                       : 'bg-gray-800 hover:bg-[#576d8f]' // Hover color
-                    } border-[1px] border-gray-800 font-medium py-3 px-6 rounded-xl text-left transition-all duration-300 ease-in-out`}
+                    } border-[1px] border-gray-800 font-medium py-3 px-6 rounded-xl text-left transition-all duration-300 ease-in-out text-sm sm:text-base`}
                   onClick={() => handleAnswerSelect(option, currentQuestionIndex)}
                 >
                   {option.label}
                 </button>
               ))}
 
-              <div className="flex justify-between gap-3">
+              <div className="flex flex-col justify-between gap-3 lg:flex-row">
                 <button
-                  className={`w-full bg-gray-700 border-[1px] ${currentQuestionIndex === 0 ? 'bg-gray-900 border-gray-900 cursor-not-allowed' : 'border-gray-700 hover:border-[#ffb414] hover:bg-[#ffb414] hover:text-black'} text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 ease-in-out`}
+                  className={`w-full bg-gray-700 border-[1px] ${currentQuestionIndex === 0 ? 'bg-gray-900 border-gray-900 cursor-not-allowed' : 'border-gray-700 hover:border-[#ffb414] hover:bg-[#ffb414] hover:text-black'} text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 ease-in-out text-sm sm:text-base`}
                   onClick={handlePreviousQuestion} disabled={currentQuestionIndex === 0}
                   title={`${currentQuestionIndex === 0 ? 'You are already on first question' : 'Click to move to previous question'}`}
                 >
@@ -118,7 +118,7 @@ const Quiz = () => {
                   Previous Question
                 </button>
                 <button
-                  className={`w-full 
+                  className={`w-full text-sm sm:text-base
                   ${!isAnswerSelected ?
                       'bg-gray-900 text-white cursor-not-allowed' :
                       `${currentQuestionIndex === questions.length - 1 ?
