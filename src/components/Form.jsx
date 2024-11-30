@@ -75,7 +75,7 @@ const Form = () => {
             Hurray! You completed the assessment
           </h2> <br />
           <h3 className="text-gray-500 text-lg sm:text-2xl mb-8 text-center">
-            Kindly fill the details to check your <span className='text-[#0064FF]'>AI maturity score</span> and <span className='text-[#0064FF]'>Category.</span>
+            Kindly fill the details to check your <span className='text-[#0064FF]'>AI maturity category.</span>
           </h3>
         </div>
 

@@ -99,9 +99,9 @@ const Quiz = () => {
                 <button
                   key={index}
                   className={`w-full ${selectedAnswers[currentQuestionIndex] === option.label
-                      ? 'bg-[#0064ff] text-white' // Selection color
+                      ? 'bg-[#0064ff]' // Selection color
                       : 'bg-gray-800 hover:bg-[#576d8f]' // Hover color
-                    } border-[1px] border-gray-800 font-medium py-3 px-6 rounded-xl text-left transition-all duration-300 ease-in-out text-sm sm:text-base`}
+                    } border-[1px] border-gray-800 text-white font-medium py-3 px-6 rounded-xl text-left transition-all duration-300 ease-in-out text-sm sm:text-base`}
                   onClick={() => handleAnswerSelect(option, currentQuestionIndex)}
                 >
                   {option.label}
