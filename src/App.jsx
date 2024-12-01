@@ -84,7 +84,7 @@ function App() {
 
   return (
     <NavigationContext.Provider value={{ currentStep, setCurrentStep }}>
-      <div className="h-screen bg-gradient-to-b from-slate-950 via-black to-slate-950 flex flex-col overflow-y-scroll">
+      <div className="h-screen bg-gradient-to-b from-slate-950 via-black to-slate-950 flex flex-col overflow-y-hidden">
         <RouterProvider router={router} />
       </div>
     </NavigationContext.Provider>
