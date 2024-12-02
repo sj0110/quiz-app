@@ -137,7 +137,7 @@ const Quiz = () => {
                 </button>
               </div>
             </div>
-            <div className='mt-8'>
+            <div className='mt-8 text-gray-500'>
               <span className='font-extrabold'>{currentQuestionIndex + 1}</span><span> out of {questions.length}</span>
             </div>
           </motion.div>
